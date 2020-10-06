@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Permanent+Marker&display=swap");
+
+.hexapod-img {
+    background: url("https://mithi.github.io/robotics-blog/v2-hexapod-1.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 125px;
+    width: 160px;
+    position: relative;
+    margin: 10px;
+}
+
+body {
+    font-weight: bold;
+    background-color: rgb(34, 47, 62);
+    color: rgb(50, 255, 126);
+    font-size: 3px;
+    font-family: Consolas, Monaco, "Anonymous Pro", Menlo, monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: 0.3rem;
+    margin-top: 5px;
+    touch-action: pan-x pan-y;
+    height: 100%;
+}
+
+a {
+    color: #ef5777;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover,
+a:active {
+    color: #ffa801;
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Permanent Marker", Consolas, Monaco, "Anonymous Pro", Menlo, monospace;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 5px;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 0.8rem;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    margin: 10px;
+    font-weight: lighter;
+}
+
+ul.no-bullet {
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+li {
+    margin-top: 5px;
+    font-size: 0.75rem;
+}
+
+code {
+    font-size: 0.8rem;
+    font-family: Consolas, Monaco, "Anonymous Pro", Menlo, monospace;
+}
+
+table {
+    margin-bottom: 0px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th {
+    font-family: "Permanent Marker", Consolas, Monaco, "Anonymous Pro", Menlo, monospace;
+}
+
+th,
+td {
+    border-bottom: 1px solid rgba(41, 128, 185, 0.5);
+    font-size: 12px;
+    line-height: 16px;
+    padding: 10px;
+}
+
+tr:hover {
+    color: #ffa801;
+}
+
+.table-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical-align {
+    vertical-align: middle;
+}
+
+.sidebar {
+    min-width: 350px;
+    flex: 1;
+    margin-right: 15px;
+    box-sizing: border-box;
+}
+
+.page-content {
+    flex-grow: 1;
+}
+
+.plot {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    margin: 0 10px 0 10px;
+}
+
+.link-icon {
+    font-size: 20px;
+    margin: 0.4rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.text-link {
+    line-height: 20px;
+    font-size: 13px;
+}
+
+#nav {
+    margin-top: 20px;
+}
+
+#landing {
+    width: 100%;
+}
+
+.button {
+    color: #ef5777;
+    background-color: rgb(34, 47, 62);
+    border: none;
+    font-family: Consolas, Monaco, "Anonymous Pro", Menlo, monospace;
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.button:hover {
+    color: #ffa801;
+    font-weight: bold;
+}
+
+.react-icons {
+    vertical-align: middle;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 0.6rem;
+}
+
+.small-icon {
+    font-size: 0.75rem;
+}
+
+.message p {
+    margin: 0px;
+    font-size: 0.7rem;
+}
+
+.blue {
+    color: #00bcd4;
+}
+
+.red {
+    color: #e74c3c;
+}
+
+input {
+    font-size: 0.6rem;
+    text-align: justify;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    width: 95%;
+    height: 2rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid rgb(41, 128, 185);
+    background-color: rgb(44, 62, 80);
+    color: rgb(46, 204, 113);
+    font-family: Consolas, Monaco, "Anonymous Pro", Menlo, monospace;
+    box-sizing: border-box;
+    padding-right: 7px;
+    text-align: right;
+}
+
+input:hover,
+input:active {
+    color: #ef5777;
+    border: 2px solid #ffa801;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.border {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid rgb(41, 128, 185);
+    border-radius: 10px;
+}
+
+.label {
+    font-size: 0.6rem;
+    margin-left: 5px;
+    opacity: 0.5;
+}
+
+.no-display {
+    display: none;
+}
+
+.row-container {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cell {
+    flex: 1;
+}
+
+.slider-container {
+    margin: 5px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    border: 0px;
+    border-radius: 5px;
+    background: #ef5777;
+    outline: none;
+    margin: 6px;
+}
+
+.slider:hover,
+.slider:active {
+    background: #ffa801;
+    height: 8px;
+    margin: 4px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(46, 204, 113);
+    cursor: pointer;
+    border: 0;
+}
+
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(46, 204, 113);
+    cursor: pointer;
+    border: 0;
+}
+
+.switch-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    border: 1px rgb(46, 204, 113);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The toggle switch */
+.toggle-switch-widget {
+    position: absolute;
+    /*border: 2px solid rgb(41, 128, 185);*/
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ef5777;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.toggle-switch-widget:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: rgb(44, 62, 80);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked + .toggle-switch-widget {
+    background-color: rgb(46, 204, 113);
+}
+
+input:focus + .toggle-switch-widget {
+    box-shadow: 0 0 1px rgb(46, 204, 113);
+}
+
+input:checked + .toggle-switch-widget:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.toggle-switch-widget.round {
+    border-radius: 17px;
+}
+
+.toggle-switch-widget.round:before {
+    border-radius: 50%;
+}
+
+@media screen and (min-height: 625px) and (min-width: 900px) {
+    .sidebar {
+        min-height: 600px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .input {
+        font-size: 0.7rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .sidebar {
+        min-width: 275px;
+    }
+
+    .plot {
+        width: 100%;
+        height: 300px;
+        min-width: 275px;
+    }
+
+    .page-content {
+        flex-grow: 0;
+    }
+
+    th,
+    td {
+        font-size: 10px;
+        line-height: 15px;
+        padding: 10px;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .input {
+        font-size: 1rem;
+    }
+
+    .main {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .sidebar {
+        max-width: 600px;
+        width: 100%;
+        order: 1;
+        margin-right: 0;
+    }
+
+    .plot {
+        width: 100%;
+        height: 400px;
+        order: 0;
+        box-sizing: border-box;
+        margin: 0;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+    .sidebar {
+        min-width: 225px;
+    }
+
+    .plot {
+        width: 100%;
+        height: 275px;
+        min-width: 250px;
+    }
+
+    .page-content {
+        flex-grow: 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    table {
+        margin: 5px;
+    }
+
+    th,
+    td {
+        padding: 3px;
+        font-size: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .top-bar {
+        display: none;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"] {
+        font-size: 16px;
+    }
+}
